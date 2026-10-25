@@ -1,0 +1,212 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  color-scheme: light;
+  --body-bg: var(--p-surface-50);
+  --body-text-color: var(--p-surface-900);
+  --card-border: 1px solid var(--border-color);
+  --card-bg: var(--p-surface-0);
+  --border-color: var(--p-surface-200);
+  --text-color: var(--p-surface-700);
+  --overlay-background: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  line-height: normal;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--body-bg);
+  font-weight: normal;
+  color: var(--body-text-color);
+  padding: 0;
+}
+
+#app {
+  min-height: 100dvh;
+}
+
+.card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el contenedor principal del login */
+.contenedor-login {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #859bfa 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.tarjeta-login {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.encabezado-login {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.encabezado-login h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.encabezado-login p {
+  color: #7f8c8d;
+}
+
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.campo-formulario label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.input-completo {
+  width: 100%;
+}
+
+.p-password {
+  width: 100%;
+  position: relative;
+}
+
+.p-password .p-password-input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.p-password-toggle {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mensaje-error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+}
+
+.boton-login {
+  margin-top: 1rem;
+}
+
+.mensaje-server {
+  margin-top: 1rem;
+}
+
+.p-invalido {
+  border-color: #e74c3c !important;
+}
+
+/* Fin Estilos para el contenedor principal del login */
+
+/* Inicio estilos para el dashboard  */
+.dashboard {
+  padding: 20px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenido {
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+/* Fin estilos para el dashboard */
+
+/* Estilos para productos */
+tabla-productos {
+  margin-top: 2rem;
+}
+
+.contenedor-tabla {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.estado-vacio,
+.estado-cargando {
+  text-align: center;
+  padding: 2rem;
+  color: #6c757d;
+}
+
+.estado-vacio i,
+.estado-cargando i {
+  margin-bottom: 1rem;
+}
+
+.informacion-tabla {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 0.5rem 1rem;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.p-paginator {
+  margin-top: 1rem;
+}
+
+/* Estilo para los botones de acciones */
+.p-button.p-button-sm {
+  padding: 0.4rem 0.5rem;
+  margin: 0 0.1rem;
+}
+
+/* Fin estilos para productos */
